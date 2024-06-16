@@ -7,6 +7,41 @@
 
 @layer utilities {
     .bg-gradient {
-        background: linear-gradient(313deg, rgba(255,111,97,0.3) 0%, rgba(239,239,239,0.5) 58%);
+        background: linear-gradient(313deg, rgba(255,111,97,0.2) 0%, rgba(239,239,239,0.8) 58%);
     }
+    .max-conatiner {
+        max-width: 1440px;
+        margin : 0 auto;
+    }
+    .themeClassLight {
+        @apply ring-2 ring-pictonBlue-500 px-[0.5rem] py-[0.25rem] rounded-full bg-gallary-500
+    }
+    .themeClassDark {
+        @apply ring-2 ring-pictonBlue-500 px-[0.5rem] py-[0.25rem] rounded-full bg-codGray-500 text-gallary-500
+    }
+    .swiper-pagination {
+        bottom: 10px; /* Adjust the position */
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
 }
+
+@layer components {
+    .btn-primary {
+        @apply bg-pictonBlue-500 px-[1rem] py-[0.5rem] rounded-xl text-white font-bold shadow-md shadow-bitterSweet-500 transition-all duration-75
+    }
+    .btn-primary-hover {
+        @apply bg-gallary-500 text-codGray-500 ring-1 ring-pictonBlue-500 shadow-sm
+    }
+
+    .btn-secondary {
+        @apply bg-gallary-500 ring-1 text-bitterSweet-500 ring-offset-pictonBlue-500 px-[1rem] py-[0.5rem] rounded-lg
+
+    }
+
+    .btn-secondary-hover {
+        @apply hover:ring-codGray-500 text-codGray-500
+    }
+}{}

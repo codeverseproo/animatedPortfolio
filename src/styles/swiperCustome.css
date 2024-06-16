@@ -1,0 +1,18 @@
+/* swiper-custom.css */
+.swiper-pagination {
+    bottom: 0.5rem !important; /* Adjust the position */
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.swiper-pagination-bullet {
+    width: 1rem !important; /* Adjust the size */
+    height: 1rem !important; /* Adjust the size */
+    background-color: #1E1E1E !important; /* Adjust the color */
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #42A5F5 !important; /* Color for the active bullet */
+}
