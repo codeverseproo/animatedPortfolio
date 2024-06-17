@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <nav className="flex justify-between py-[2rem] font-ubuntu">
             <div className="flex justify-center gap-[2rem] items-center max-md:flex-col max-md:flex-1">
-                <h1 className="max-md:text-[2rem] max-sm:text-[1rem] font-bold text-3xl leading-[1.3rem] tracking-tight uppercase">{yourName}</h1>
+                <h1 className="max-md:text-[2rem] max-sm:text-[2rem] font-bold text-3xl leading-[1.3rem] tracking-tight uppercase">{yourName}</h1>
                 <div>
                     <div className="ring-4 ring-pictonBlue-500 px-[0.5rem] py-[0.25rem] rounded-full flex items-center gap-[0rem]">
                         <FontAwesomeIcon onClick={() => themeContext?.setTheme('dark')} icon={faMoon} className={`${themeContext!.theme == 'dark' && themeContext?.themeClassDark} transition-all duration-300 px-[0.5rem] py-[0.25rem] cursor-pointer`} />
