@@ -26,13 +26,13 @@ export default function Works() {
                 <div className={`shrink-1 w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:-top-[3rem] max-lg:-top-[3rem] -top-[3rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
                     <FontAwesomeIcon icon={faUpwork} />
                 </div>
-                <div className={`w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:right-[10rem] max-lg:right-[9rem] right-[5rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
+                <div className={`w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:right-[10rem] max-lg:right-[9rem] right-[9rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
                     <FontAwesomeIcon icon={faUpwork} />
                 </div>
                 <div className={`w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:-bottom-[3rem] max-lg:-bottom-[3rem] -bottom-[3rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
                     <FontAwesomeIcon icon={faUpwork} />
                 </div>
-                <div className={`w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:left-[10rem] max-lg:left-[9rem] left-[5rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
+                <div className={`w-[8rem] max-md:w-[6rem] h-[8rem] max-md:h-[6rem] ring-4 ring-codGray-500 bg-gallary-500 rounded-full flex justify-center items-center absolute max-md:left-[10rem] max-lg:left-[9rem] left-[9rem] transition-all duration-300 ${isMouseOver && "hover:rotate-[360deg]"}`}>
                     <FontAwesomeIcon icon={faUpwork} />
                 </div>
             </div>
