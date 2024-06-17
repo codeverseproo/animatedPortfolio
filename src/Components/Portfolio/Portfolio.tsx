@@ -4,7 +4,7 @@ import { projects } from "../../lib/appconst"
 
 export default function Portfolio() {
     return (
-        <section className="py-[5rem] max-lg:py-[5rem]" id="portfolio">
+        <section className="padding-x py-[5rem] max-lg:py-[5rem]" id="portfolio">
             <div className="max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center">
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] tracking-tight leading-[3rem]">Recent Projects</h3>
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] text-pictonBlue-500 tracking-tight leading-[3rem]">Portfolio</h3>

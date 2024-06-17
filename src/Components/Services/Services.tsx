@@ -12,7 +12,7 @@ export default function Services() {
 
 
     return (
-        <section className="py-[5rem] max-lg:py-[3rem] flex justify-center max-lg:flex-col max-lg:gap-[5rem]" id="services">
+        <section className="padding-x py-[5rem] max-lg:py-[3rem] flex justify-center max-lg:flex-col max-lg:gap-[5rem]" id="services">
             <div className="flex-1 max-lg:flex max-lg:flex-col justify-center items-center max-lg:text-center">
                 <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] tracking-tight">My awesome</h2>
                 <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] text-pictonBlue-500 tracking-tight">Services</h2>

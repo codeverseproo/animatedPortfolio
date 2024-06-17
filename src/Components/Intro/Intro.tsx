@@ -10,7 +10,7 @@ export default function Intro() {
     const theme = useThemeContext()?.theme;
 
     return (
-        <section className="flex justify-center items-center gap-[2rem] max-lg:gap-[4rem] py-[5rem] max-md:py-[2rem] max-lg:flex-col">
+        <section className="padding-x flex justify-center items-center gap-[2rem] max-lg:gap-[4rem] py-[5rem] max-md:py-[2rem] max-lg:flex-col">
             <div className="max-md:w-full w-1/2 max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center">
                 <h2 className="max-md:text-[2rem] capitalize font-ubuntu font-bold text-[60px] tracking-tighter leading-[5rem] max-md:leading-[3rem]">Hy! <span className="">I Am</span></h2>
                 <h2 className="max-md:text-[2rem] capitalize font-ubuntu font-bold text-[60px] tracking-tight leading-[5rem] max-md:leading-[3rem] text-pictonBlue-500">{introDetail.intorName}</h2>

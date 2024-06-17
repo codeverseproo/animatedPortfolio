@@ -10,7 +10,7 @@ export default function Works() {
 
     return (
 
-        <section className="flex py-[5rem] max-lg:py-[3rem] max-lg:flex-col max-lg:gap-[7rem] items-center">
+        <section className="padding-x flex py-[5rem] max-lg:py-[3rem] max-lg:flex-col max-lg:gap-[7rem] items-center">
             <div className="flex-1 max-lg:flex max-lg:flex-col max-lg:text-center max-lg:justify-center max-lg:items-center">
                 <h3 className="font-ubuntu font-bold text-[40px] max-md:text-[2rem] max-md:leading-[3rem] tracking-tight leading-[3rem]">Worked For All These</h3>
                 <h3 className="font-ubuntu font-bold text-[40px] max-md:text-[2rem] max-md:leading-[3rem] tracking-tight leading-[3rem] text-pictonBlue-500">Brands and Clients</h3>

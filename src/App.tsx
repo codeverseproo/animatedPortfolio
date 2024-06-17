@@ -1,5 +1,6 @@
 import Contact from "./Components/Contact/Contact"
 import Experience from "./Components/Experience/Experience"
+import Footer from "./Components/Footer/Footer"
 import Intro from "./Components/Intro/Intro"
 import Navbar from "./Components/NavBar/Navbar"
 import Portfolio from "./Components/Portfolio/Portfolio"
@@ -14,7 +15,7 @@ function App() {
   const theme = useThemeContext();
 
   return (
-    <div className={`min-h-screen ${theme?.theme == 'light' ? "bg-gradient text-codGray-500" : "bg-codGray-500 text-gallary-500"} px-[3.5rem] max-conatiner  tracking-wide`}>
+    <div className={`min-h-screen ${theme?.theme == 'light' ? "bg-gradient text-codGray-500" : "bg-codGray-500 text-gallary-500"}  max-conatiner  tracking-wide`}>
       <Navbar />
       <Intro />
       <Services />
@@ -23,6 +24,7 @@ function App() {
       <Portfolio />
       <Testimonial />
       <Contact />
+      <Footer />
     </div>
   )
 }

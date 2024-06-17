@@ -56,7 +56,7 @@ export default function Contact() {
 
 
     return (
-        <section className={`${theme == 'dark' && "text-codGray-500"} py-[5rem] max-lg:py-[3rem] flex flex-col items-center gap-[3rem] lg:min-h-screen`} id="contact">
+        <section className={` padding-x ${theme == 'dark' && "text-codGray-500"} py-[5rem] max-lg:py-[3rem] flex flex-col items-center gap-[3rem]`} id="contact">
             <div className="flex-1 flex flex-col items-center">
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize tracking-tight leading-[3rem]">Get in touch</h3>
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize text-pictonBlue-500 tracking-tight leading-[3rem]">Contact me</h3>

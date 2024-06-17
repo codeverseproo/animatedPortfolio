@@ -11,7 +11,7 @@ export default function Testimonial() {
     const theme = useThemeContext()?.theme
 
     return (
-        <section className="py-[5rem] max-lg:py-[3rem]" id="testimonial">
+        <section className="padding-x py-[5rem] max-lg:py-[3rem]" id="testimonial">
             <div className="max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center">
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] text-[40px] capitalize tracking-tight leading-[3rem]">Clients always get <span className="text-pictonBlue-500">exceptional work</span> from me...</h3>
             </div>
