@@ -16,7 +16,11 @@ export default function Intro() {
                 <h2 className="max-md:text-[2rem] capitalize font-ubuntu font-bold text-[60px] tracking-tighter leading-[5rem] max-md:leading-[3rem]">Hy! <span className="">I Am</span></h2>
                 <h2 className="max-md:text-[2rem] capitalize font-ubuntu font-bold text-[60px] tracking-tight leading-[5rem] max-md:leading-[3rem] text-pictonBlue-500">{introDetail.intorName}</h2>
                 <p className="mt-[1rem]">{introDetail.introDescription}</p>
-                <button className="btn-primary capitalize hover:btn-primary-hover mt-[1rem]">Hire Me</button>
+                <motion.button
+                    initial={{ scale: 1.2 }}
+                    whileInView={{ scale: 1 }}
+                    transition={transitionConst}
+                    className="btn-primary capitalize hover:btn-primary-hover mt-[1rem]">Hire Me</motion.button>
                 <div className="text-4xl max-md:mt-[3rem] mt-[5rem] flex justify-start gap-[2rem]">
                     {
                         socialLinks.map((item, index) => {
@@ -37,7 +41,7 @@ export default function Intro() {
                     transition={transition}
                     src={mustaches} className="absolute max-md:max-w-[10%] max-w-[10%] left-0 top-0 hover:scale-105 transition-all duration-75" />
                 <motion.div
-                    initial={{ opacity: 0, right: '-20%' }}
+                    initial={{ opacity: 0, right: '20%' }}
                     whileInView={{ opacity: 1, right: 0 }}
                     transition={transition}
                     className={`${theme == 'dark' && "text-codGray-500"} bg-gallary-500 flex ring-1 ring-pictonBlue-500 gap-[1rem] px-[1rem] py-[0.5rem] rounded-lg absolute -top-[2rem] -right-[2rem] z-10 shadow-2xl shadow-bitterSweet-500 hover:scale-105 transition-all duration-75`}>

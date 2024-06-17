@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import wave from "../../assets/wave/wave.svg"
-import { socialLinks } from "../../lib/appconst"
+import { socialLinks, transitionConst } from "../../lib/appconst"
 import { motion } from "framer-motion"
 
 export default function Footer() {
@@ -16,9 +16,13 @@ export default function Footer() {
                 <div className="flex items-center gap-[2rem]">
                     {
                         socialLinks.map((item, index) => {
-                            return <a key={index} href={item.link} target="__blank" className="">
+                            return <motion.a
+                                initial={{ scale: 0 }}
+                                whileInView={{ scale: 1 }}
+                                transition={transitionConst}
+                                key={index} href={item.link} target="__blank" className="">
                                 <FontAwesomeIcon icon={item.img} className=" text-4xl hover:scale-110 transition-all duration-100" />
-                            </a>
+                            </motion.a>
                         })
                     }
                 </div>
