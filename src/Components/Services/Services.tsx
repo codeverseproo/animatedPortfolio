@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-import "swiper/css";
 
 export default function Services() {
     const [currentServie, setCurrentService] = useState(0)
@@ -25,10 +24,12 @@ export default function Services() {
                 <div className="flex gap-[1rem] text-2xl text-pictonBlue-500">
                     {
                         services.map((item, index) => {
-                            return <FontAwesomeIcon onClick={() => setCurrentService(index)} icon={faCircle} key={item.heading} className={`${index == currentServie && "text-codGray-500"} transition-all duration-100 cursor-pointer`} />
+                            return <FontAwesomeIcon onClick={() => setCurrentService(index)} icon={faCircle} key={item.heading} className={`${index == currentServie && "text-bitterSweet-500"} transition-all duration-100 cursor-pointer`} />
                         })
                     }
                 </div>
+
+
             </div>
         </section>
     )

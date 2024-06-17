@@ -9,10 +9,10 @@
 .swiper-pagination-bullet {
     width: 1rem !important; /* Adjust the size */
     height: 1rem !important; /* Adjust the size */
-    background-color: #1E1E1E !important; /* Adjust the color */
+    background-color: #42A5F5 !important; /* Adjust the color */
     opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-    background-color: #42A5F5 !important; /* Color for the active bullet */
+    background-color: #FF6F61 !important; /* Color for the active bullet */
 }
