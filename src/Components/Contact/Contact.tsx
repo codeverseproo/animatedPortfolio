@@ -1,6 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import { useThemeContext } from '../../context/ThemeCintextProvider';
+import { motion } from 'framer-motion'
 
 
 const service_id = import.meta.env.VITE_EMAILJS_SERVICE_ID
@@ -61,7 +62,11 @@ export default function Contact() {
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize tracking-tight leading-[3rem]">Get in touch</h3>
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize text-pictonBlue-500 tracking-tight leading-[3rem]">Contact me</h3>
             </div>
-            <div className="flex-1 flex justify-center items-center w-full">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, type: 'tween', ease: 'easeInOut' }}
+                className="flex-1 flex justify-center items-center w-full">
                 <form ref={form} className="flex flex-col gap-[2rem] w-2/5 max-md:w-4/5" onSubmit={sendEmail}>
                     <input type="text" name='user_name' placeholder="Name" id="name" value={name} onChange={(e) => setName(e.target.value)} className="px-[1rem] py-[0.5rem] ring-2 rounded-lg ring-pictonBlue-500 focus:outline-1 focus:outline-bitterSweet-500 transition-all duration-100" />
                     <input type="email" name='user_email' placeholder="Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="px-[1rem] py-[0.5rem] ring-2 rounded-lg ring-pictonBlue-500 focus:outline-1 focus:outline-bitterSweet-500 transition-all duration-100" />
@@ -75,7 +80,7 @@ export default function Contact() {
                     }
                     <button disabled={sending ? true : false} type="submit" className={`w-[10rem] self-center btn-primary hover:btn-primary-hover disabled:bg-gray-500 disabled:cursor-not-allowed`}>Send</button>
                 </form>
-            </div>
+            </motion.div>
         </section>
     )
 }

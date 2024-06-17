@@ -145,3 +145,13 @@ export const testimonial = [
     },
    
 ]
+
+export const workExp = [
+    {
+        lable : "Frontend Developer",
+        img : ""
+    },
+    
+]
+
+export const transitionConst = { duration: 2, type: "spring", stiffness: 100, damping: 20, delay: 0.5 }

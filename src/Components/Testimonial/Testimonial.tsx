@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"
+import { motion } from "framer-motion"
 import { testimonial } from "../../lib/appconst"
 import { Pagination } from "swiper/modules"
 import "swiper/css"
@@ -15,7 +16,11 @@ export default function Testimonial() {
             <div className="max-lg:flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:text-center">
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] text-[40px] capitalize tracking-tight leading-[3rem]">Clients always get <span className="text-pictonBlue-500">exceptional work</span> from me...</h3>
             </div>
-            <div>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, type: 'tween', ease: 'easeInOut' }}
+            >
                 <Swiper slidesPerView={1} modules={[Pagination]} pagination={{ clickable: true }} className="flex justify-center items-center my-[3rem] max-lg:my-[1rem]">
                     {
                         testimonial.map((item, index) => {
@@ -28,7 +33,7 @@ export default function Testimonial() {
                         })
                     }
                 </Swiper>
-            </div>
+            </motion.div>
         </section>
     )
 }

@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion } from "framer-motion"
 
 import { projects } from "../../lib/appconst"
 
@@ -10,7 +11,11 @@ export default function Portfolio() {
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] text-pictonBlue-500 tracking-tight leading-[3rem]">Portfolio</h3>
 
             </div>
-            <div className="flex justify-center items-center">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, type: 'tween', ease: 'easeInOut' }}
+                className="flex justify-center items-center">
                 <Swiper slidesPerView={3} spaceBetween={30} grabCursor={true} className="mt-[2rem] flex justify-center items-center">
                     {
                         projects.map((item, index) => {
@@ -18,7 +23,7 @@ export default function Portfolio() {
                         })
                     }
                 </Swiper>
-            </div>
+            </motion.div>
         </section>
     )
 }
