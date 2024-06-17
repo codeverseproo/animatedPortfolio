@@ -1,5 +1,5 @@
 /* eslint-disable react-refresh/only-export-components */
-import { createContext, useContext, useState } from "react"
+import { createContext, useContext, useEffect, useState } from "react"
 
 const themeContext = createContext<null | TValue>(null)
 
@@ -12,7 +12,13 @@ type TValue = {
 
 export default function ThemeCintextProvider({ children }: { children: React.ReactNode }) {
 
-    const [theme, setTheme] = useState("light")
+    const [theme, setTheme] = useState(localStorage.getItem("localTheme") || "light")
+
+    useEffect(() => {
+
+        localStorage.setItem("localTheme", theme)
+
+    }, [theme])
 
     const value = {
         theme,
