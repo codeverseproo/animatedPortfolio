@@ -13,12 +13,12 @@ export default function Services() {
 
 
     return (
-        <section className="py-[5rem] flex justify-center" id="services">
-            <div className="flex-1">
-                <h2 className="font-ubuntu font-bold text-[60px] leading-[5rem] tracking-tight">My awesome</h2>
-                <h2 className="font-ubuntu font-bold text-[60px] leading-[5rem] text-pictonBlue-500 tracking-tight">Services</h2>
+        <section className="py-[5rem] max-lg:py-[3rem] flex justify-center max-lg:flex-col max-lg:gap-[5rem]" id="services">
+            <div className="flex-1 max-lg:flex max-lg:flex-col justify-center items-center max-lg:text-center">
+                <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] tracking-tight">My awesome</h2>
+                <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] text-pictonBlue-500 tracking-tight">Services</h2>
                 <p className="mt-[1rem]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis ipsum, ex unde sint enim deserunt necessitatibus distinctio ducimus voluptas fugit debitis fuga, consequuntur tempora iure reiciendis. Sapiente omnis consequuntur dicta!</p>
-                <button className="mt-[5rem]"><a className="btn-primary hover:btn-primary-hover">Download CV</a></button>
+                <button className="mt-[5rem] max-lg:mt-[3rem]"><a className="btn-primary hover:btn-primary-hover">Download CV</a></button>
             </div>
             <div className="flex-1 flex flex-col justify-center items-center gap-[2rem]">
                 <ServicesCard cardDetail={services[currentServie].discription} cardHeading={services[currentServie].heading} cardLink={services[currentServie].link} img={services[currentServie].img} className={""} />

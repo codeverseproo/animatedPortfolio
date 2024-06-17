@@ -56,13 +56,13 @@ export default function Contact() {
 
 
     return (
-        <section className={`${theme == 'dark' && "text-codGray-500"} py-[5rem] flex flex-col items-center gap-[3rem] min-h-screen`} id="contact">
+        <section className={`${theme == 'dark' && "text-codGray-500"} py-[5rem] flex flex-col items-center gap-[3rem] min-h-screen max-lg:min-h-[200px]`} id="contact">
             <div className="flex-1 flex flex-col items-center">
-                <h3 className="font-ubuntu font-bold text-[40px] capitalize tracking-tight leading-[3rem]">Get in touch</h3>
-                <h3 className="font-ubuntu font-bold text-[40px] capitalize text-pictonBlue-500 tracking-tight leading-[3rem]">Contact me</h3>
+                <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize tracking-tight leading-[3rem]">Get in touch</h3>
+                <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize text-pictonBlue-500 tracking-tight leading-[3rem]">Contact me</h3>
             </div>
             <div className="flex-1 flex justify-center items-center w-full">
-                <form ref={form} className="flex flex-col gap-[2rem] w-2/5" onSubmit={sendEmail}>
+                <form ref={form} className="flex flex-col gap-[2rem] w-2/5 max-md:w-4/5" onSubmit={sendEmail}>
                     <input type="text" name='user_name' placeholder="Name" id="name" value={name} onChange={(e) => setName(e.target.value)} className="px-[1rem] py-[0.5rem] ring-2 rounded-lg ring-pictonBlue-500 focus:outline-1 focus:outline-bitterSweet-500 transition-all duration-100" />
                     <input type="email" name='user_email' placeholder="Email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} className="px-[1rem] py-[0.5rem] ring-2 rounded-lg ring-pictonBlue-500 focus:outline-1 focus:outline-bitterSweet-500 transition-all duration-100" />
                     <textarea name="user_message" placeholder="Message" id="message" cols={10} rows={5} value={message} onChange={(e) => setMessage(e.target.value)} className="resize-none px-[1rem] py-[0.5rem] ring-2 rounded-lg ring-pictonBlue-500 focus:outline-1 focus:outline-bitterSweet-500 transition-all duration-100"></textarea>
