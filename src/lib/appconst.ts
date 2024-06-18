@@ -13,19 +13,19 @@ export const navbar = [
     },
     {
         label : "services",
-        link : "#services"
+        link : "services"
     },
     {
         label : "experience",
-        link : "#experience"
+        link : "experience"
     },
     {
         label : "portfolio",
-        link : "#portfolio"
+        link : "portfolio"
     },
     {
         lable : "testimonial",
-        link : "#testimonial"
+        link : "testimonial"
     }
 ]
 

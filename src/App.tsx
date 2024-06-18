@@ -15,7 +15,7 @@ function App() {
   const theme = useThemeContext();
 
   return (
-    <div className={`min-h-screen ${theme?.theme == 'light' ? "bg-gradient text-codGray-500" : "bg-codGray-500 text-gallary-500"}  max-conatiner  tracking-wide`}>
+    <div className={`scroll-smooth min-h-screen ${theme?.theme == 'light' ? "bg-gradient text-codGray-500" : "bg-codGray-500 text-gallary-500"}  max-conatiner  tracking-wide`}>
       <Navbar />
       <Intro />
       <Services />

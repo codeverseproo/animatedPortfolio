@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { navbar, yourName } from "../../lib/appconst";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useThemeContext } from "../../context/ThemeCintextProvider";
+import { Link } from "react-scroll"
 
 // import moonIcon from "../../assets/icons/moon-solid.svg"
 
@@ -26,11 +27,11 @@ export default function Navbar() {
                 <ul className="max-lg:hidden flex justify-center items-center gap-[2rem] text-lg capitalize">
                     {
                         navbar.map((item, index) => {
-                            return <li key={index}><a href={item.link} className="px-[0.5rem] py-[0.5rem] hover:text-pictonBlue-500 transition-all duration-75">{item.label}</a></li>
+                            return <li key={index}><Link spy={true} to={item.link} smooth={true} className="cursor-pointer px-[0.5rem] py-[0.5rem] hover:text-pictonBlue-500 transition-all duration-75">{item.label}</Link></li>
                         })
                     }
                 </ul>
-                <a href="#contact"><button className="btn-primary hover:btn-primary-hover">Contact</button></a>
+                <Link spy smooth to="contact"><button className="btn-primary hover:btn-primary-hover">Contact</button></Link>
             </div>
         </nav>
     )
