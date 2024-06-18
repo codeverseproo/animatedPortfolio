@@ -57,7 +57,11 @@ export default function Contact() {
 
 
     return (
-        <section className={` padding-x ${theme == 'dark' && "text-codGray-500"} py-[5rem] max-lg:py-[3rem] flex flex-col items-center gap-[3rem]`} id="contact">
+        <motion.section
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, type: 'tween', ease: 'easeInOut' }}
+            className={` padding-x ${theme == 'dark' && "text-codGray-500"} py-[5rem] max-lg:py-[3rem] flex flex-col items-center gap-[3rem]`} id="contact">
             <div className="flex-1 flex flex-col items-center">
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize tracking-tight leading-[3rem]">Get in touch</h3>
                 <h3 className="font-ubuntu font-bold max-md:text-[2rem] max-md:leading-[3rem] text-[40px] capitalize text-pictonBlue-500 tracking-tight leading-[3rem]">Contact me</h3>
@@ -81,6 +85,6 @@ export default function Contact() {
                     <button disabled={sending ? true : false} type="submit" className={`w-[10rem] self-center btn-primary hover:btn-primary-hover disabled:bg-gray-500 disabled:cursor-not-allowed`}>Send</button>
                 </form>
             </motion.div>
-        </section>
+        </motion.section>
     )
 }

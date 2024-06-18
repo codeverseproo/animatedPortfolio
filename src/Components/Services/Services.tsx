@@ -13,7 +13,11 @@ export default function Services() {
 
 
     return (
-        <section className="padding-x py-[5rem] max-lg:py-[3rem] flex justify-center max-lg:flex-col max-lg:gap-[5rem]" id="services">
+        <motion.section
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, type: 'tween', ease: 'easeInOut' }}
+            className="padding-x py-[5rem] max-lg:py-[3rem] flex justify-center max-lg:flex-col max-lg:gap-[5rem]" id="services">
             <div className="flex-1 max-lg:flex max-lg:flex-col justify-center items-center max-lg:text-center">
                 <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] tracking-tight">My awesome</h2>
                 <h2 className="font-ubuntu max-md:text-[2rem] max-md:leading-[3rem] font-bold text-[60px] leading-[5rem] text-pictonBlue-500 tracking-tight">Services</h2>
@@ -40,6 +44,6 @@ export default function Services() {
 
 
             </motion.div>
-        </section>
+        </motion.section>
     )
 }
